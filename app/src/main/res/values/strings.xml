@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">Ever First</string>
+    <string name="customer">Customer</string>
+
+    <string name="customer_details">Customer Details</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="middle_name">Middle Name</string>
+    <string name="suffix">Suffix</string>
+    <string name="birth_date">Birth Date</string>
+    <string name="contact_number">Contact Number</string>
+    <string name="other_contact_number">Other Contact Number</string>
+    <string name="pension_source">Pension Source</string>
+    <string-array name="pension_source">
+        <item>GSIS</item>
+        <item>SSS</item>
+    </string-array>
+    <string name="pension_type">Pension Type</string>
+    <string-array name="pension_type">
+        <item>Employment Compensation (EC)</item>
+        <item>Partial Disability (SP)</item>
+        <item>Retirement (RT)</item>
+        <item>Spouse Death (SD)</item>
+        <item>Total Disability (ST)</item>
+    </string-array>
+
+    <string name="present_address">Present Address</string>
+    <string name="permanent_address">Permanent Address</string>
+    <string name="previous_address">Previous Address</string>
+    <string name="unit">House No./Room No./Bldg No.</string>
+    <string name="location">Street/Subdivision</string>
+    <string name="city">Barangay/City</string>
+    <string name="region">Region</string>
+    <string name="same_as_present_address">Is same as present address?</string>
+
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+</resources>
