@@ -32,15 +32,14 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:padding="8dp">
-
+            android:padding="16dp">
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/customer_details"
-                android:drawableStart="@mipmap/round_account_box_black_24"
-                android:drawableLeft="@mipmap/round_account_box_black_24" />
+                android:drawableStart="@drawable/account_box"
+                android:drawableLeft="@drawable/account_box"
+                android:text="@string/customer_details" />
 
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/firstName"
@@ -172,10 +171,10 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/present_address"
-                android:drawableStart="@mipmap/round_location_on_black_24"
-                android:drawableLeft="@mipmap/round_location_on_black_24"
-                android:layout_marginTop="8dp"/>
+                android:layout_marginTop="8dp"
+                android:drawableStart="@drawable/map_marker"
+                android:drawableLeft="@drawable/map_marker"
+                android:text="@string/present_address" />
 
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/unit"
@@ -229,9 +228,9 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/permanent_address"
-                    android:drawableStart="@mipmap/round_location_on_black_24"
-                    android:drawableLeft="@mipmap/round_location_on_black_24"/>
+                    android:drawableStart="@drawable/map_marker"
+                    android:drawableLeft="@drawable/map_marker"
+                    android:text="@string/permanent_address" />
 
                 <CheckBox
                     android:id="@+id/permanentAddressCheckbox"
@@ -300,9 +299,9 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/previous_address"
-                    android:drawableStart="@mipmap/round_location_on_black_24"
-                    android:drawableLeft="@mipmap/round_location_on_black_24" />
+                    android:drawableStart="@drawable/map_marker"
+                    android:drawableLeft="@drawable/map_marker"
+                    android:text="@string/previous_address" />
 
                 <CheckBox
                     android:id="@+id/previousAddressCheckbox"
