@@ -37,9 +37,10 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:drawableStart="@drawable/account_box"
-                android:drawableLeft="@drawable/account_box"
-                android:text="@string/customer_details" />
+                android:drawableStart="@drawable/account"
+                android:drawableLeft="@drawable/account"
+                android:text="@string/customer_details"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
 
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/firstName"
@@ -78,7 +79,7 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:baselineAligned="false"
                 android:orientation="horizontal"
                 android:weightSum="100">
@@ -111,7 +112,7 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:baselineAligned="false"
                 android:orientation="horizontal"
                 android:weightSum="100">
@@ -145,7 +146,7 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 android:weightSum="100">
 
@@ -171,10 +172,11 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
+                android:layout_marginTop="16dp"
                 android:drawableStart="@drawable/map_marker"
                 android:drawableLeft="@drawable/map_marker"
-                android:text="@string/present_address" />
+                android:text="@string/present_address"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
 
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/unit"
@@ -220,29 +222,25 @@
                     android:hint="@string/region" />
             </com.google.android.material.textfield.TextInputLayout>
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:drawableStart="@drawable/map_marker"
+                android:drawableLeft="@drawable/map_marker"
+                android:text="@string/permanent_address"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:drawableStart="@drawable/map_marker"
-                    android:drawableLeft="@drawable/map_marker"
-                    android:text="@string/permanent_address" />
-
-                <CheckBox
-                    android:id="@+id/permanentAddressCheckbox"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/same_as_present_address" />
-            </LinearLayout>
+            <CheckBox
+                android:id="@+id/permanentAddressCheckbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/same_as_present_address" />
 
             <LinearLayout
                 android:id="@+id/permanentAddressLayout"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:orientation="vertical">
 
                 <com.google.android.material.textfield.TextInputLayout
@@ -291,29 +289,25 @@
 
             </LinearLayout>
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:drawableStart="@drawable/map_marker"
+                android:drawableLeft="@drawable/map_marker"
+                android:text="@string/previous_address"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:drawableStart="@drawable/map_marker"
-                    android:drawableLeft="@drawable/map_marker"
-                    android:text="@string/previous_address" />
-
-                <CheckBox
-                    android:id="@+id/previousAddressCheckbox"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/same_as_present_address" />
-            </LinearLayout>
+            <CheckBox
+                android:id="@+id/previousAddressCheckbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/same_as_present_address" />
 
             <LinearLayout
                 android:id="@+id/previousAddressLayout"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:orientation="vertical">
 
                 <com.google.android.material.textfield.TextInputLayout
@@ -361,6 +355,164 @@
                 </com.google.android.material.textfield.TextInputLayout>
 
             </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:drawableStart="@drawable/account_box"
+                android:drawableLeft="@drawable/account_box"
+                android:text="@string/pension_member_data"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+            <CheckBox
+                android:id="@+id/sameAsCustomerCheckBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/same_as_customer" />
+
+        <LinearLayout
+            android:id="@+id/pensionMemberDataLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/pensionMemberFirstName"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/first_name"
+                    android:inputType="text" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/pensionMemberLastName"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/last_name" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/pensionMemberMiddleName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/middle_name" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:baselineAligned="false"
+                android:orientation="horizontal"
+                android:weightSum="100">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/pensionMemberSuffix"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="50">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/suffix" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/pensionMemberBirthDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="50">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/birth_date"
+                        android:inputType="date" />
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/pensionMemberBank"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/bank" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/pensionMemberBranch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/branch" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="100">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/pensionMemberRemittanceDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="50">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/remittance_date" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.tiper.MaterialSpinner
+                android:id="@+id/pensionMemberModePension"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="50"
+                android:hint="@string/pension_source"
+                android:prompt="@string/pension_source"
+                app:spinnerMode="dialog" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/account_multiple"
+                android:drawableLeft="@drawable/account_multiple"
+                android:text="@string/dependents"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+        </LinearLayout>
 
         </LinearLayout>
 

@@ -32,6 +32,20 @@
     <string name="city">Barangay/City</string>
     <string name="region">Region</string>
     <string name="same_as_present_address">Is same as present address?</string>
+    <string name="pension_member_data">Pension Member Data</string>
+    <string name="same_as_customer">Is same as customer?</string>
+
+    <string name="bank">Bank</string>
+    <string name="branch">Branch</string>
+    <string name="savings_account_number">Savings Account Number</string>
+    <string name="remittance_date">Remittance Date</string>
+    <string name="mode_of_pension">Mode Of Pension</string>
+    <string-array name="mode_of_pension">
+        <item>ATM</item>
+        <item>Passbook</item>
+    </string-array>
+
+    <string name="dependents">Dependents</string>
 
     <string name="tab_text_1">Tab 1</string>
     <string name="tab_text_2">Tab 2</string>
